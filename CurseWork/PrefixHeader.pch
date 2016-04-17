@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  CurseWork
+//
+//  Created by KonstEmelyantsev on 4/17/16.
+//  Copyright © 2016 KonstEmelyantsev. All rights reserved.
+//
+
+//#ifndef PrefixHeader_pch
+//#define PrefixHeader_pch
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __cplusplus
+#import <opencv2/opencv.hpp>
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+//#endif /* PrefixHeader_pch */

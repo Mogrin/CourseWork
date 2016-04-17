@@ -1,25 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vve-2k-X94">
+                                <rect key="frame" x="20" y="28" width="280" height="470"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H17-rj-XNX">
+                                <rect key="frame" x="224" y="505" width="76" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="4bf-bY-0GA"/>
+                                    <constraint firstAttribute="width" constant="76" id="KII-6s-9xn"/>
+                                </constraints>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k6Y-6Q-udK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUJ-AW-Mjf">
+                                <rect key="frame" x="20" y="505" width="76" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="LbD-vh-odA"/>
+                                    <constraint firstAttribute="height" constant="43" id="VCj-gv-rhJ"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D9v-di-Cr1"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="H17-rj-XNX" secondAttribute="bottom" constant="20" id="4nB-fs-jco"/>
+                            <constraint firstItem="PUJ-AW-Mjf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Ouy-fL-YK0"/>
+                            <constraint firstItem="Vve-2k-X94" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="28" id="R0W-KN-hG6"/>
+                            <constraint firstItem="Vve-2k-X94" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="VJU-9O-zCt"/>
+                            <constraint firstAttribute="trailing" secondItem="H17-rj-XNX" secondAttribute="trailing" constant="20" id="X6k-AW-Ubs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PUJ-AW-Mjf" secondAttribute="bottom" constant="20" id="c5N-oR-iuI"/>
+                            <constraint firstAttribute="trailing" secondItem="Vve-2k-X94" secondAttribute="trailing" constant="20" id="ezj-oT-Ld1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vve-2k-X94" secondAttribute="bottom" constant="70" id="mND-27-M6p"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Vve-2k-X94" id="PkO-y6-RWQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="148" y="253"/>
         </scene>
     </scenes>
 </document>
