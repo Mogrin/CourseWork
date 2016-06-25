@@ -26,6 +26,7 @@
 		E78689971CC3E80200FB0AEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78689961CC3E80200FB0AEB /* UIKit.framework */; };
 		E78689991CC3E80700FB0AEB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78689981CC3E80700FB0AEB /* QuartzCore.framework */; };
 		E78689A01CC3E8F100FB0AEB /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E786899F1CC3E8F100FB0AEB /* opencv2.framework */; };
+		E7D651AE1D1AA60F00A7F485 /* AnimationViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7D651AD1D1AA60F00A7F485 /* AnimationViewController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		E78689961CC3E80200FB0AEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E78689981CC3E80700FB0AEB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E786899F1CC3E8F100FB0AEB /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		E7D651AC1D1AA60F00A7F485 /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
+		E7D651AD1D1AA60F00A7F485 /* AnimationViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AnimationViewController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,8 @@
 				E78689571CC3E6E200FB0AEB /* AppDelegate.mm */,
 				E78689591CC3E6E200FB0AEB /* ViewController.h */,
 				E786895A1CC3E6E200FB0AEB /* ViewController.mm */,
+				E7D651AC1D1AA60F00A7F485 /* AnimationViewController.h */,
+				E7D651AD1D1AA60F00A7F485 /* AnimationViewController.mm */,
 				E786895C1CC3E6E200FB0AEB /* Main.storyboard */,
 				E78689611CC3E6E200FB0AEB /* LaunchScreen.storyboard */,
 				E78689531CC3E6E200FB0AEB /* Supporting Files */,
@@ -327,6 +332,7 @@
 				E786895B1CC3E6E200FB0AEB /* ViewController.mm in Sources */,
 				E78689581CC3E6E200FB0AEB /* AppDelegate.mm in Sources */,
 				E78689551CC3E6E200FB0AEB /* main.m in Sources */,
+				E7D651AE1D1AA60F00A7F485 /* AnimationViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
